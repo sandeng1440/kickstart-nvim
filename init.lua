@@ -116,6 +116,9 @@ require('lazy').setup {
   require 'kickstart.plugins.debug',
   require 'kickstart.plugins.indent_line',
   { import = 'custom.plugins' },
+  --vim.cmd [[colorscheme miasma]],
 }
+vim.cmd [[colorscheme moonfly]]
+
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
