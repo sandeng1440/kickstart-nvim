@@ -4,10 +4,10 @@ return {
   -- See `:help ibl`
   main = 'ibl',
   opts = {},
-  config = function()
-    require('ibl').setup {
-      scope = { enabled = false },
-      indent = { char = '|' },
-    }
-  end,
+  -- config = function()
+  --   require('ibl').setup {
+  --     scope = { enabled = false },
+  --     indent = { char = '|' },
+  --   }
+  -- end,
 }
