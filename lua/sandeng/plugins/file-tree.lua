@@ -1,3 +1,26 @@
+-- return {
+--   'nvim-neo-tree/neo-tree.nvim',
+--   version = '*',
+--   dependencies = {
+--     'nvim-lua/plenary.nvim',
+--     'nvim-tree/nvim-web-devicons', -- not strictly required, but recommended
+--     'MunifTanjim/nui.nvim',
+--   },
+--   cmd = 'Neotree',
+--   keys = {
+--     { '\\', ':Neotree reveal<CR>', { desc = 'NeoTree reveal' } },
+--   },
+--   opts = {
+--     filesystem = {
+--       window = {
+--         mappings = {
+--           ['\\'] = 'close_window',
+--         },
+--       },
+--     },
+--   },
+-- }
+
 return {
   'nvim-tree/nvim-tree.lua',
   dependencies = { 'antosha417/nvim-lsp-file-operations' },
@@ -9,8 +32,8 @@ return {
     vim.g.loaded_netrwPlugin = 1
 
     -- change color for arrows in tree to light blue
-    vim.cmd [[ highlight NvimTreeFolderArrowClosed guifg=#3FC5FF ]]
-    vim.cmd [[ highlight NvimTreeFolderArrowOpen guifg=#3FC5FF ]]
+    -- vim.cmd [[ highlight NvimTreeFolderArrowClosed guifg=#3FC5FF ]]
+    -- vim.cmd [[ highlight NvimTreeFolderArrowOpen guifg=#3FC5FF ]]
 
     -- local sort_by = function(nodes)
     --   table.sort(nodes, function(a, b)
@@ -72,8 +95,8 @@ return {
         icons = {
           glyphs = {
             folder = {
-              arrow_closed = '', -- arrow when folder is closed
-              arrow_open = '', -- arrow when folder is open
+              -- arrow_closed = '', -- arrow when folder is closed
+              -- arrow_open = '', -- arrow when folder is open
             },
           },
           -- show = {

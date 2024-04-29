@@ -6,7 +6,7 @@ return {
     -- local cyberdream = require 'lualine.themes.cyberdream'
     require('lualine').setup {
       options = {
-        theme = 'moonfly',
+        theme = 'auto',
       },
     }
   end,
