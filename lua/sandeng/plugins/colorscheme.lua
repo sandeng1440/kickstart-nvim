@@ -1,6 +1,22 @@
 -- If you want to see what colorschemes are already installed, you can use `:Telescope colorscheme`
 -- You can configure highlights by doing something like
 -- vim.cmd.hi 'Comment gui=none'
+local citruszest = {
+  {
+    'zootedb0t/citruszest.nvim',
+    lazy = false,
+    priority = 1000,
+    -- config = function()
+    --   vim.cmd 'colorscheme citruszest' -- set the colorscheme
+    -- end,
+  },
+  {
+    'LazyVim/LazyVim',
+    opts = {
+      colorscheme = 'citruszest',
+    },
+  },
+}
 local cyberdream = {
   {
     'scottmckendry/cyberdream.nvim',
@@ -60,4 +76,4 @@ local moonfly = {
     },
   },
 }
-return moonfly
+return citruszest
